@@ -62,6 +62,9 @@ router.put('/RemoveStudentAtten/:id', removeStudentAttendance)
 
 router.post('/TeacherReg', teacherRegister);
 router.post('/TeacherLogin', teacherLogIn)
+router.get('/hello', (req, res) => {
+    res.send("hello")
+})
 
 router.get("/Teachers/:id", getTeachers)
 router.get("/Teacher/:id", getTeacherDetail)
